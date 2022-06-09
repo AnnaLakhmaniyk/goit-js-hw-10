@@ -10,8 +10,8 @@ export const renderOneMarkup = (country, container) => {
         capital,
         population,
         languages,
-      }) => /*html */ `<div class="wrape"><img src="${
-        flags.svg
+      }) => /*html */ `<div class="wrape"><img src="${flags.svg}" alt="${
+        name.official
       }" width="60" height="auto" >
       <p class="textAll">${name.official}</p></div>
       <ul class="country-list">
