@@ -14,7 +14,7 @@ inputEl.addEventListener('input', debounce(onSearchCountry, DEBOUNCE_DELAY));
 function onSearchCountry(event) {
   const inputValue = event.target.value.trim();
   console.log(inputValue);
-  if (inputValue === '') {
+  if (!inputValue) {
     cleanAll();
     return;
   }
